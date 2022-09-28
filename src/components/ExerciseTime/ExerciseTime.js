@@ -3,8 +3,8 @@ import './ExerciseTime.css'
 
 const ExerciseTime = ({exerciseTime }) => {
     const [breakTime, setBreakTime] = useState(0);
-     const handleBreakTime = (time) => {
-         setBreakTime(time);
+     const handleBreakTime = (breakTime) => {
+         setBreakTime(breakTime);
     }
     //console.log(exerciseTime);
     let totalTime = 0;

@@ -1,10 +1,19 @@
 import React, { useState } from 'react';
-import './ExerciseTime.css'
+import './ExerciseTime.css';
+import Swal from 'sweetalert2'
 
 const ExerciseTime = ({exerciseTime }) => {
     const [breakTime, setBreakTime] = useState(0);
      const handleBreakTime = (breakTime) => {
          setBreakTime(breakTime);
+    }
+
+    const activity = () => {
+        Swal.fire(
+                'Good job!',
+                'You Done All Thing Properly!',
+                'success'
+                )
     }
     //console.log(exerciseTime);
     let totalTime = 0;
@@ -50,7 +59,7 @@ const ExerciseTime = ({exerciseTime }) => {
                         <h4>{breakTime}</h4>
                         </div>
                 </div>
-               <button className='btn'>Activity Completed</button>
+               <button onClick={activity} className='btn'>Activity Completed</button>
         </div>
     );
 };

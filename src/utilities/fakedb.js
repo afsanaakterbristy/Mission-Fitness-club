@@ -1,21 +1,21 @@
-// use local storage to manage cart data
-const addToDb = id =>{
+
+const addToDb = time =>{
     let breakTime = {};
 
-    //get the shopping cart from local storage
+   
     const storedTime = localStorage.getItem('time');
     if(storedTime){
         breakTime = JSON.parse(storedTime);
     }
 
-    // add quantity
-    const quantity = breakTime[id];
+   
+    const quantity = breakTime[time];
     if(quantity){
         const newQuantity = quantity + 1;
-        breakTime[id] = newQuantity;
+        breakTime[time] = newQuantity;
     }
     else{
-        breakTime[id] = 1;
+        breakTime[time] = 1;
     }
     localStorage.setItem('time', JSON.stringify(breakTime));
 }
@@ -23,7 +23,7 @@ const addToDb = id =>{
 const getStoredTime = () => {
         let breakTime = {};
 
-    //get the shopping cart from local storage
+    
     const storedTime = localStorage.getItem('time');
     if(storedTime){
         breakTime = JSON.parse(storedTime);

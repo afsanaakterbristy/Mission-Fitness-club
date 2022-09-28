@@ -6,8 +6,8 @@ import { addToDb } from '../../utilities/fakedb';
 const ExerciseTime = ({exerciseTime}) => {
     
     const [breakTime, setBreakTime] = useState(0);
-    const handleBreakTime = (mission ) => { 
-         setBreakTime(mission);
+    const handleBreakTime = (breakTime ) => { 
+         setBreakTime(breakTime);
          addToDb(breakTime);
     }
 

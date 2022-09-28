@@ -1,0 +1,74 @@
+[
+  {
+    "id": "1",
+    "name": "Boxing Gym",
+    "description": "A gym mission statement is crucial in managing your club business.",
+    "time": 42,
+    "img": "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Z3ltfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60",
+    "quantity": 1
+  },
+  {
+    "id": "2",
+    "name": "Sparring",
+    "description": "Despite its importance, some club owners take it for granted.",
+    "time": 42,
+    "img": "https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Z3ltfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60",
+    "quantity": 1
+  },
+ {
+    "id": "3",
+    "name": "ZONE Fitness",
+    "description": "Most people, especially the customers.That includes the goals, values, beliefs, codes of ethics, and more.",
+    "time": 42,
+    "img": "https://images.unsplash.com/photo-1605296867304-46d5465a13f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGd5bXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60",
+    "quantity": 1
+  },
+ {
+    "id": "4",
+    "name": "BURN WORKOUT",
+    "description": "It is important to have a well-crafted gym mission statement. It is crucial to understand its primary purpose.",
+    "time": 42,
+    "img": "https://images.unsplash.com/photo-1594737625785-a6cbdabd333c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxzZWFyY2h8Mjl8fGd5bXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60",
+    "quantity": 1
+  },
+  {
+    "id": "5",
+    "name": "Workout on the Planet",
+    "description": "Your mission statement will help to maintain direction when you think of a new service to include in your business",
+    "time": 42,
+    "img": "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDB8fGd5bXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60",
+    "quantity": 1
+  },
+  {
+    "id": "6",
+    "name": "Interval Training",
+    "description": "It is important to have a well-crafted gym mission statement. It is crucial to understand its primary purpose.",
+    "time": 42,
+    "img": "https://images.unsplash.com/photo-1554344728-77cf90d9ed26?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDZ8fGd5bXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60",
+    "quantity": 1
+  },
+  {
+    "id": "7",
+    "name": "Personal Trainer Support",
+    "description": "A gym mission statement is crucial in managing your club business.",
+    "time": 42,
+    "img": "https://images.unsplash.com/photo-1574680178050-55c6a6a96e0a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTN8fGd5bXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60",
+    "quantity": 0
+  },
+  {
+    "id": "8",
+    "name": "Group Training ",
+    "description": "If you are creating a mission statement, it not all about you. Remember that without a team, it is impossible to build a company.",
+    "time": 42,
+    "img": "https://images.unsplash.com/photo-1590239926044-4131f5d0654d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjF8fGd5bXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60",
+    "quantity": 0
+  },
+  {
+    "id": "9",
+    "name": "Interval Training",
+    "description": "Your mission statement will help to maintain direction when you think of a new service to include in your business",
+    "time": 42,
+    "img": "https://images.unsplash.com/photo-1581009137042-c552e485697a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjR8fGd5bXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60",
+    "quantity": 0
+  }
+]

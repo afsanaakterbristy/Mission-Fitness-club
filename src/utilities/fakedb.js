@@ -27,11 +27,9 @@ const getStoredTime = () => {
     const storedTime = localStorage.getItem('time');
     if(storedTime){
         breakTime = JSON.parse(storedTime);
-        return breakTime;
-    }
+       
+    } return breakTime;
 }
-
-
 
 export {
     addToDb,

@@ -11,9 +11,11 @@ const Home = () => {
    
     useEffect(() => {
         fetch('missions.json')
-        .then(res => res.json())
-        .then(data => setMissions(data))
-    },[])
+            .then(res => res.json())
+            .then(data => setMissions(data))
+    }, []);
+    
+    
     
     const handleAddToCart = (mission) => {
         //console.log(mission);

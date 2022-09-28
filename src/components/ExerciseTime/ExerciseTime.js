@@ -1,16 +1,25 @@
 import React, { useState } from 'react';
 import './ExerciseTime.css';
 import Swal from 'sweetalert2'
-import { addToDb } from '../../utilities/fakedb';
+
 
 const ExerciseTime = ({exerciseTime}) => {
     
     const [breakTime, setBreakTime] = useState(0);
-    const handleBreakTime = (breakTime ) => { 
-         setBreakTime(breakTime);
-         addToDb(breakTime);
+    const getValue = localStorage.getItem('time');
+    const newGetValue = JSON.parse(getValue);
+    const handleBreakTime = (breakTime) => { 
+        console.log(breakTime);
+        
+        if (newGetValue) {
+            setBreakTime(breakTime); 
+            localStorage.setItem('time', breakTime);
+        } else {
+             setBreakTime(breakTime); 
+            localStorage.setItem('time', breakTime);
+        }
+        
     }
-
     const activity = () => {
         Swal.fire(
                 'Good job!',
@@ -59,7 +68,7 @@ const ExerciseTime = ({exerciseTime}) => {
                         </div>
                         <div className='exercise-time'>
                         <h4>Break time</h4>
-                        <h4>{breakTime}</h4>
+                        <h4>{breakTime?breakTime:newGetValue?newGetValue:0}</h4>
                         </div>
                 </div>
                <button onClick={activity} className='btn'>Activity Completed</button>

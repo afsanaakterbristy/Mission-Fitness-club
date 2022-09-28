@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
 import './ExerciseTime.css';
 import Swal from 'sweetalert2'
+import { addToDb } from '../../utilities/fakedb';
 
-const ExerciseTime = ({exerciseTime }) => {
+const ExerciseTime = ({exerciseTime}) => {
+    
     const [breakTime, setBreakTime] = useState(0);
-     const handleBreakTime = (breakTime) => {
-         setBreakTime(breakTime);
+    const handleBreakTime = (mission ) => { 
+         setBreakTime(mission);
+         addToDb(breakTime);
     }
 
     const activity = () => {
@@ -39,8 +42,8 @@ const ExerciseTime = ({exerciseTime }) => {
                         <h3 className='break-title'>Add A Break</h3>
                         <div className='exercise-time'>
                         
-                        <button onClick={()=>handleBreakTime(20)}  className='break-btn'>20 <span>s</span></button>
-                        <button onClick={()=>handleBreakTime(30)}  className='break-btn'>30 <span>s</span></button>
+                        <button onClick={()=>handleBreakTime(20)}  className='break-btn'>20<span>s</span></button>
+                        <button onClick={()=>handleBreakTime(30)}  className='break-btn'>30<span>s</span></button>
                         <button onClick={()=>handleBreakTime(40)}  className='break-btn'>40 <span>s</span></button>
                         <button onClick={()=>handleBreakTime(50)}  className='break-btn'>50 <span>s</span></button>
                         <button onClick={()=>handleBreakTime(60)}  className='break-btn'>60 <span>s</span></button>

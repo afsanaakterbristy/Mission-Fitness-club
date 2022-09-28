@@ -35,7 +35,7 @@ const Home = () => {
             </div>
                 <div className='left-side'>
 
-                    <ExerciseTime exerciseTime={exerciseTime} ></ExerciseTime>
+                    <ExerciseTime exerciseTime={exerciseTime}></ExerciseTime>
                     
 
                 </div>

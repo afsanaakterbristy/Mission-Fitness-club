@@ -1,7 +1,11 @@
 .home-title{
     margin-left: 50px;
-    font-size: 600;
+    font-size: 900;
     color: rgb(243, 188, 188);;
+}
+.activities{
+    margin-left: 50px;
+    font-size: 900;
 }
 
 .home-container {

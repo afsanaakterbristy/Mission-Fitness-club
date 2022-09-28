@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDumbbell } from '@fortawesome/free-solid-svg-icons'
 import Cart from '../Cart/Cart';
 import './Home.css';
 
@@ -13,7 +15,8 @@ const Home = () => {
 
     return (
         <>
-            <h3 className='home-title'>Mission Fitness  club</h3>
+            <h3 className='home-title'><FontAwesomeIcon icon={faDumbbell}></FontAwesomeIcon>  Mission Fitness club </h3>
+            <p className='activities'>Click Your Today Activities</p>
            <div className='home-container'>           
             <div className='right-side'>
                 {

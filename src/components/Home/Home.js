@@ -12,6 +12,9 @@ const Home = () => {
         .then(data => setMissions(data))
     },[])
     
+    const handleAddToCart = (mission) => {
+        console.log(mission);
+    }
 
     return (
         <>
@@ -20,7 +23,8 @@ const Home = () => {
            <div className='home-container'>           
             <div className='right-side'>
                 {
-                  missions.map(mission=>(<Cart mission={mission} key={mission.id}></Cart>))  
+                        missions.map(mission => (<Cart mission={mission} key={mission.id}
+                        handleAddToCart ={handleAddToCart}></Cart>))  
                 }
             </div>
                 <div className='left-side'>

@@ -12,7 +12,7 @@ const Cart = (props) => {
             <p><small>Quantity:{quantity}</small></p>
              <p><small>Time:{time}</small></p>
             </div>
-            <button className='btn-cart'>
+            <button onClick={()=>props.handleAddToCart(props.mission)} className='btn-cart'>
                 <p>Add to List</p>   
             </button>
         </div>

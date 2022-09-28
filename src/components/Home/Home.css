@@ -1,3 +1,9 @@
+.home-title{
+    margin-left: 50px;
+    font-size: 600;
+    color: rgb(243, 188, 188);;
+}
+
 .home-container {
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -8,6 +14,7 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 45px;
     margin: 100px 50px;
+    margin-top: 30px;
 }
 
 .left-side {

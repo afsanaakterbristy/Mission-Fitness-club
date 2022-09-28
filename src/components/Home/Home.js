@@ -12,7 +12,9 @@ const Home = () => {
     
 
     return (
-        <div className='home-container'>
+        <>
+            <h3 className='home-title'>Mission Fitness  club</h3>
+           <div className='home-container'>           
             <div className='right-side'>
                 {
                   missions.map(mission=>(<Cart mission={mission} key={mission.id}></Cart>))  
@@ -21,7 +23,8 @@ const Home = () => {
             <div className='left-side'>
                 <h2>okk2</h2>
             </div>
-        </div>
+            </div>
+            </>
     );
 };
 

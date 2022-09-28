@@ -29,7 +29,7 @@
     border-radius: 10px;
 
 }
-.left-cart{
+/* .left-cart{
     display: flex;
 }
 .left-side img{
@@ -95,7 +95,7 @@
     border: 0;
     padding: 10px;
     margin-top: 10px;
-}
+} */
 
 @media screen and (max-width:1100px) {
     .right-side {

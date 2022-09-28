@@ -1,40 +1,10 @@
-import React, { useEffect, useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faDumbbell } from '@fortawesome/free-solid-svg-icons'
-import Cart from '../Cart/Cart';
-import './Home.css';
-import ExerciseTime from '../ExerciseTime/ExerciseTime';
+import React from 'react';
+import './ExerciseTime.css'
 
-const Home = () => {
-    const [missions, setMissions] = useState([]);
-    const [exerciseTime,setExerciseTime]=useState([])
-    useEffect(() => {
-        fetch('missions.json')
-        .then(res => res.json())
-        .then(data => setMissions(data))
-    },[])
-    
-    const handleAddToCart = (mission) => {
-        //console.log(mission);
-        const newCart = [...exerciseTime, mission];
-        setExerciseTime(newCart)
-    }
-
+const ExerciseTime = () => {
     return (
-        <>
-            <h3 className='home-title'><FontAwesomeIcon icon={faDumbbell}></FontAwesomeIcon>  Mission Fitness club </h3>
-            <p className='activities'>Click Your Today Activities</p>
-           <div className='home-container'>           
-            <div className='right-side'>
-                {
-                        missions.map(mission => (<Cart mission={mission} key={mission.id}
-                        handleAddToCart ={handleAddToCart}></Cart>))  
-                }
-            </div>
-                <div className='left-side'>
-
-                    <ExerciseTime exerciseTime={exerciseTime}></ExerciseTime>
-                    {/* <div className='left-cart'>
+        <div>
+             <div className='left-cart'>
                          <img src="https://images.unsplash.com/photo-1548690312-e3b507d8c110?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGd5bXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60" alt="" />
                         <div>
                             <h3 className='cart-details'>Name:Akter</h3>
@@ -67,13 +37,9 @@ const Home = () => {
                         <h4>300</h4>
                         </div>
                 </div>
-               <button className='btn'>Activity Completed</button> */}
-
-                </div>
-               
-            </div>
-            </>
+               <button className='btn'>Activity Completed</button>
+        </div>
     );
 };
 
-export default Home;
+export default ExerciseTime;

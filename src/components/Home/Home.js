@@ -16,8 +16,7 @@ const Home = () => {
             .then(data => setMissions(data))
     }, []);
     
-    
-    
+    //Add to list
     const handleAddToCart = (mission) => {
         //console.log(mission);
         const newCart = [...exerciseTime, mission];

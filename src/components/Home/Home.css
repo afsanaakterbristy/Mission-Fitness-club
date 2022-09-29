@@ -30,10 +30,11 @@
 
 }
 
+/* For responsive */
+@media only screen and (min-width:576px) and (max-width:768px) {
 
-@media screen and (max-width:1100px) {
     .right-side {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
+            grid-template-columns: repeat(1, 1fr);
+        }
 }
+

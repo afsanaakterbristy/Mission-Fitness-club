@@ -9,7 +9,6 @@ const ExerciseTime = ({exerciseTime}) => {
     const getValue = localStorage.getItem('time');
     const newGetValue = JSON.parse(getValue);
     const handleBreakTime = (breakTime) => { 
-        console.log(breakTime);
         
         if (newGetValue) {
             setBreakTime(breakTime); 
@@ -20,6 +19,7 @@ const ExerciseTime = ({exerciseTime}) => {
         }
         
     }
+    //For showing activity 
     const activity = () => {
         Swal.fire(
                 'Good job!',
@@ -28,6 +28,7 @@ const ExerciseTime = ({exerciseTime}) => {
                 )
     }
     //console.log(exerciseTime);
+    //ExerciseTime calculation
     let totalTime = 0;
     for (const mission of exerciseTime) {
         totalTime  = totalTime  + mission.time;
@@ -36,6 +37,7 @@ const ExerciseTime = ({exerciseTime}) => {
     return (
  
         <div>
+            
              <div className='left-cart'>
                          <img src="https://images.unsplash.com/photo-1548690312-e3b507d8c110?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGd5bXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60" alt="" />
                         <div>

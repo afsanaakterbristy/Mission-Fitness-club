@@ -3,7 +3,7 @@ import './Question.css'
 
 const Question = () => {
     return (
-        <div className='question'>
+       <div className='question'>
             <h2>Question And Answer</h2>
        <h5>1.How does react work?</h5>
        <p>Ans.ReactJS divides the UI into isolated reusable pieces of code known as components. React components work similarly to JavaScript functions as they accept arbitrary inputs called properties or props. It's possible to have as many components as necessary without cluttering your code.React is a declarative, efficient, and flexible JavaScript library for building user interfaces. ReactJS is an open-source, component-based front end library responsible only for the view layer of the application.</p>

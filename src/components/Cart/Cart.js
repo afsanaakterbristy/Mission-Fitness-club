@@ -1,6 +1,6 @@
 import React from 'react';
-import './Cart.css'
-
+import './Cart.css';
+//cart section
 const Cart = (props) => {
     const {name,description,time,img,quantity} = props.mission;
     return (

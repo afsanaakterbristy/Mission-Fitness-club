@@ -4,6 +4,7 @@ import { faDumbbell } from '@fortawesome/free-solid-svg-icons'
 import Cart from '../Cart/Cart';
 import './Home.css';
 import ExerciseTime from '../ExerciseTime/ExerciseTime';
+import Question from '../Question/Question';
 
 const Home = () => {
     const [missions, setMissions] = useState([]);
@@ -43,6 +44,7 @@ const Home = () => {
                 </div>
                
             </div>
+            <Question></Question>
             </>
     );
 };
